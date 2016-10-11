@@ -1,0 +1,37 @@
+<div class="panel">
+
+    <div class="login-page-wrap">
+
+        <h3>로그인</h3>
+
+        <div class="login-page-form-wrap">
+
+            <div style="width: 100%; height: 44px; border-bottom: 1px solid #ddd;">
+                <h4 style="margin-left: 30px; color: #6f7275;">아이디 로그인</h4>
+            </div>
+
+            <form class="form-signin form-user panel-body panel-margin" role="form" ng-submit="vm.login($event)">
+
+
+                <input type="hidden" name="redirectUrl" value="/user/register">
+
+                <input type="text" name="j_username" id="username" class="username form-control input-sm" placeholder="아이디" ng-model="vm.username">
+                <input type="password" name="j_password" class="password form-control input-sm" placeholder="비밀번호" ng-model="vm.password">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="remember_me" id="remember_me" ng-model="vm.rememberMe" checked> 로그인 유지
+                    </label>
+                </div>
+                <button class="btn btn-primary btn-block" type="submit">로그인</button>
+                <div class="signup-block">
+                    <a href="/find/user/index">계정 찾기</a> <span class="inline-saperator">/</span> <a href="/user/register">회원 가입</a>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+</div>

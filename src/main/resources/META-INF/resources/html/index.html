@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IT 불꽃코딩 커뮤니티 사이트</title>
+    <meta name="description" content="">
+    <meta name="google" value="notranslate">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="content/css/font-awesome.min.css">
+    <link rel="stylesheet" href="content/css/swiper.min.css">
+    <link rel="stylesheet" href="content/css/main.css">
+</head>
+<body class="no-js" ng-app="app">
+
+<div class="container">
+
+
+    <div class="sidebar" ui-view="sidebar">
+
+    </div>
+
+    <div class="content-wrap">
+
+        <div class="content-main" ui-view="content">
+
+        </div>
+
+        <div class="footer" ui-view="footer">
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-cache-buster/angular-cache-buster.js"></script>
+<script src="bower_components/ngstorage/ngStorage.js"></script>
+
+<script src="app/app.module.js"></script>
+<script src="app/app.state.js"></script>
+<script src="app/app.constants.js"></script>
+<script src="app/config/http.config.js"></script>
+
+<script src="app/service/account.service.js"></script>
+<script src="app/service/auth.jwt.service.js"></script>
+<script src="app/service/auth.service.js"></script>
+<script src="app/service/principal.service.js"></script>
+<script src="app/service/register.service.js"></script>
+<script src="app/home/home.state.js"></script>
+<script src="app/home/home.controller.js"></script>
+
+<script src="app/register/account.state.js"></script>
+<script src="app/register/register.state.js"></script>
+<script src="app/register/register.controller.js"></script>
+
+
+<!-- 20160830 -->
+<script src="content/js/swiper.min.js"></script>
+<script src="app/login/login.state.js"></script>
+<script src="app/login/login.controller.js"></script>
+
+
+<!-- 20160901 board -->
+<script src="app/board/board.state.js"></script>
+<script src="app/board/board.controller.js"></script>
+<script src="app/board/detail/board.detail.state.js"></script>
+<script src="app/board/detail/board.detail.controller.js"></script>
+
+</body>
+</html>

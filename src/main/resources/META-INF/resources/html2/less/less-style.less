@@ -1,0 +1,707 @@
+/********************/
+/* Custom LESS File */
+/********************/
+
+/* Color declaration */
+
+@white				: #ffffff;
+@light-grey			: #f9f9f9;
+@grey				: #eeeeee;
+@dark-grey			: #aaaaaa;
+@black				: #666666;
+@dark-black			: #111111;
+@red				: #f75353;
+@dark-red			: #ed4747;
+@green				: #51d466;
+@dark-green			: #42c557;
+@lblue				: #32c8de;
+@dark-lblue			: #2bbdd2;
+@blue				: #609cec;
+@dark-blue			: #528fe2;
+@orange				: #f78153;
+@dark-orange		: #eb6c3a;
+@yellow				: #fcd419;
+@dark-yellow		: #e9c51b;
+@purple				: #cb79e6;
+@dark-purple		: #b75bd6;
+@rose				: #ff61e7;
+@dark-rose			: #f245d8;
+@brown				: #d08166;
+@dark-brown			: #bf6748;
+
+/* Basic */
+@default-text		: #666666;
+@default-heading	: #777777;
+@link-color			: #777777;
+@link-hcolor		: #555555;
+@link-vcolor		: #888888;
+
+/* Labels */
+
+@label-padding: 6px 9px;
+@label-font-size: 12px;
+@label-font-weight: normal;
+
+/* Progress Bar */
+
+.progress{
+	height:8px !important;
+}
+
+/***********/
+/* General */
+/***********/
+
+body{
+	color: @default-text;
+}
+
+h1,h2,h3,h4,h5,h6{
+	color: @default-heading;
+}
+
+a{
+	color: @link-color;
+}
+
+a:hover, a:focus{
+	color: @link-hcolor;
+}
+
+/**********************/
+/* Text color classes */
+/**********************/
+
+.white{
+	color:@white;
+}
+
+.grey{
+	color:@grey;
+}
+
+.black{
+	color:@black;
+}
+
+.red{
+	color:@red;
+}
+
+.green{
+	color:@green;
+}
+
+.lblue{
+	color:@lblue;
+}
+
+.blue{
+	color:@blue;
+}
+
+.orange{
+	color:@orange;
+}
+
+.yellow{
+	color:@yellow;
+}
+
+.purple{
+	color:@purple;
+}
+
+.rose{
+	color:@rose;
+}
+
+.brown{
+	color:@brown;
+}
+
+/****************************/
+/* Background color classes */
+/****************************/
+
+.br-white{
+	background-color:@white;
+}
+
+.br-grey{
+	background-color:@grey;
+}
+
+.br-black{
+	background-color:@black;
+}
+
+.br-red{
+	background-color:@red;
+}
+
+.br-green{
+	background-color:@green;
+}
+
+.br-lblue{
+	background-color:@lblue;
+}
+
+.br-blue{
+	background-color:@blue;
+}
+
+.br-orange{
+	background-color:@orange;
+}
+
+.br-yellow{
+	background-color:@yellow;
+}
+
+.br-purple{
+	background-color:@purple;
+}
+
+.br-rose{
+	background-color:@rose;
+}
+
+.br-brown{
+	background-color:@brown;
+}
+
+/************************/
+/* Button color classes */
+/************************/
+
+.btn.btn-default{
+	background: @light-grey;
+	color: @black !important;
+	border:1px solid @dark-grey;
+}
+
+.btn.btn-default:hover{
+	background: @grey;
+}
+
+.btn.btn-black{
+	color: @white;
+	background: @black;
+}
+
+.btn.btn-black:hover{
+	background: @dark-black;
+}
+
+.btn.btn-danger{
+	background: @red;
+}
+
+.btn.btn-danger:hover{
+	background: @dark-red;
+}
+
+.btn.btn-success{
+	background: @green;
+}
+
+.btn.btn-success:hover{
+	background: @dark-green;
+}
+
+.btn.btn-info{
+	background: @lblue;
+}
+
+.btn.btn-info:hover{
+	background: @dark-lblue;
+}
+
+.btn.btn-primary{
+	background: @blue;
+}
+
+.btn.btn-primary:hover{
+	background: @dark-blue;
+}
+
+.btn.btn-warning{
+	background: @orange;
+}
+
+.btn.btn-warning:hover{
+	background: @dark-orange;
+}
+
+.btn.btn-yellow{
+	background:@yellow;
+	color:@white;
+	border: 1px solid @dark-yellow;
+}
+
+.btn.btn-yellow:hover{
+	background:@dark-yellow;
+}
+
+.btn.btn-purple{
+	background: @purple;
+	color: @white;
+	border: 1px solid @dark-purple;
+}
+
+.btn.btn-purple:hover{
+	background: @dark-purple;
+}
+
+.btn.btn-rose{
+	background:@rose;
+	color:@white;
+	border: 1px solid @dark-rose;
+}
+
+.btn.btn-rose:hover{
+	background:@dark-rose;
+}
+
+.btn.btn-brown{
+	background: @brown;
+	color: @white;
+	border: 1px solid @dark-brown;
+}
+
+.btn.btn-brown:hover{
+	background: @dark-brown;
+}
+
+/*********/
+/* Label */
+/*********/
+
+.label{
+	padding:@label-padding;
+	font-size:@label-font-size;
+	font-weight:@label-font-weight;
+}
+
+.label.label-default{
+	color:@dark-grey;
+	background:@grey;
+}
+
+.label.label-black{
+	background:@black;
+}
+
+.label.label-danger{
+	background:@red;
+}
+
+.label.label-success{
+	background:@green;
+}
+
+.label.label-info{
+	background:@lblue;
+}
+
+.label.label-primary{
+	background:@blue;
+}
+
+.label.label-warning{
+	background:@orange;
+}
+
+.label.label-yellow{
+	background:@yellow;
+}
+
+.label.label-purple{
+	background:@purple;
+}
+
+.label.label-rose{
+	background:@rose;
+}
+
+.label.label-brown{
+	background:@brown;
+}
+
+/*********/
+/* Badge */
+/*********/
+
+.badge.badge-default{
+	color:@dark-grey;
+	background:@grey;
+}
+
+.badge.badge-primary{
+	background: @blue;
+}
+
+.badge.badge-success{
+	background: @green;
+}
+
+.badge.badge-info{
+	background: @lblue;
+}
+
+.badge.badge-warning{
+	background: @orange;
+}
+
+.badge.badge-danger{
+	background: @red;
+}
+
+.badge.badge-black{
+	background: @black;
+}
+
+.badge.badge-brown{
+	background: @brown;
+}
+
+.badge.badge-orange{
+	background: @orange;
+}
+
+.badge.badge-purple{
+	background: @purple;
+}
+
+/****************/
+/* Progress bar */
+/****************/
+
+.progress-bar-danger{
+	background:@red;
+}
+
+.progress-bar-success{
+	background:@green;
+}
+
+.progress-bar-info{
+	background:@lblue;
+}
+
+.progress-bar-primary{
+	background:@blue;
+}
+
+.progress-bar-warning{
+	background:@orange;
+}
+
+/****************/
+/* Switches */
+/* Multi color */
+/****************/
+
+.sw-green .onoffswitch-inner:before {
+    background-color: @green;
+}
+
+.sw-red .onoffswitch-inner:before {
+    background-color: @red;
+}
+
+.sw-lblue .onoffswitch-inner:before {
+    background-color: @lblue;
+}
+
+.sw-orange .onoffswitch-inner:before {
+    background-color: @orange;
+}
+
+.sw-blue .onoffswitch-inner:before {
+    background-color: @blue;
+}
+
+/**********************/
+/* Slider UI Elements */
+/**********************/
+
+.slider-red .ui-widget-header{
+	background: @red !important;
+	border-color: @red !important;
+}	
+
+.slider-blue .ui-widget-header{
+	background: @blue !important;
+	border-color: @blue !important;
+}	
+
+.slider-green .ui-widget-header{
+	background: @green !important;
+	border-color: @green !important;
+}	
+
+.slider-yellow .ui-widget-header{
+	background: @yellow !important;
+	border-color: @yellow !important;
+}	
+
+.slider-orange .ui-widget-header{
+	background: @orange !important;
+	border-color: @orange !important;
+}	
+
+.slider-violet .ui-widget-header{
+	background: @purple !important;
+	border-color: @purple !important;
+}	
+
+/*************/
+/* Nav Tabs  */
+/*************/
+
+.nav-tabs{
+	>li{
+		>a{
+			color:@black;
+			&:hover{
+				background:@red;
+				color:@white;
+				border-color:@red;
+			}
+		}
+	}
+	>li.active{
+		>a{
+			background-color: @red;
+			border-color: @red;
+			color : @white;
+			&:hover{
+				background-color: @red;
+				border-color:@red;
+				color:@white;
+			}
+			&:focus{
+				background-color: @red;
+				border-color:@red;
+				color:@white;
+			}	
+		}
+	}
+	>li.open{
+		>a{
+			background-color: @red;
+			border-color: @red;
+			color : @white;
+			&:hover{
+				background-color: @red;
+				border-color:@red;
+				color:@white;
+			}
+			&:focus{
+				background-color: @red;
+				border-color:@red;
+				color:@white;
+			}			
+		}
+	}	
+}
+
+	
+/*************/
+/* Nav Pills */
+/*************/
+
+.nav-pills{
+	li{
+		a{	
+			background:@light-grey;
+			border:1px solid @grey;
+			color:@white;
+			&:hover{
+				background:@red;
+				color:@white;
+				border-color:@red;
+			}
+		}
+	}
+	li.active{
+		a{
+			background-color: @red;
+			border-color: @red;
+			color : @white;
+			&:hover{
+				background-color: @dark-red;
+			}
+		}
+	}
+}
+
+/**************/
+/* Pagination */
+/**************/
+
+.pagination{
+	li{
+		a{
+			color:@link-color;
+			&:hover{
+				background-color: @red;
+				border-color: @red;
+				color: @white;
+			}
+		}
+	}
+	li.active{
+		a{
+			background-color: @red;
+			border-color: @red;
+			&:hover{
+				background-color: @red;
+				border-color: @red;
+			}
+			&:focus{
+				background-color: @red;
+				border-color: @red;
+			}
+		}
+		span{
+			background-color: @red;
+			border-color: @red;
+			&:hover{
+				background-color: @red;
+				border-color: @red;
+			}
+			&:focus{
+				background-color: @red;
+				border-color: @red;
+			}
+		}		
+	}
+}
+
+/*********/
+/* Pager */
+/*********/
+
+.pager{
+	li{
+		a{
+			background-color:@red;
+			color:@white;
+			border:1px solid @dark-red;
+			&:hover{
+				background:@dark-red;
+			}
+		}
+	}
+}
+
+/*******************/
+/* Form Validation */
+/*******************/
+
+form{
+	input[type="text"].error,
+	input[type="password"].error,
+	input[type="email"].error{
+		border: 1px solid @red !important;
+	}
+	select.error,
+	textarea.error{
+		border: 1px solid @red !important;
+	}
+	label.error {
+		color: @red;
+	}
+}
+
+/***************/
+/* Form Wizard */
+/***************/
+
+.wizard{
+	.steps{
+		.current{
+			a{
+				background: @black;
+				&:hover{
+					background: @black;
+				}
+				&:active{
+					background: @black;
+				}
+			}
+		}
+		.done{
+			a{
+				background: @red;
+				color: @white;
+				&:hover{
+					background: @red;
+				}
+				&:active{
+					background: @red;
+				}
+			}
+		}
+		.disabled{
+			a{
+				background: @grey;
+				&:hover{
+					background: @grey;
+				}
+				&:active{
+					background: @grey;
+				}
+			}
+		}
+	}
+	.actions{
+		a{
+			background: @red;
+			&:hover{
+				background: @red;
+			}
+			&:active{
+				background: @red;
+			}
+		}
+		.disabled{
+			a{
+				background: @grey;
+				&:hover{
+					background: @grey;
+				}
+				&:active{
+					background: @grey;
+				}
+			}
+		}
+	}
+}
+
+/***************/
+/* Mail inbox */
+/***************/
+
+.page-inbox	{
+	.table{
+		tr.m-unread{
+			background: lighten(@yellow, 40%);
+		}
+		tr.m-read{
+			background: @light-grey;
+		}
+	}
+}
+
+/***************/
+/* Sidebar */
+/***************/
+
+.sidebar{
+	background: #333;
+}

@@ -1,0 +1,61 @@
+<style>
+
+    .register-page-panel {
+        width: 100%; height: 44px; border-bottom: 1px solid #ddd;
+    }
+
+    .register-page-panel > h4 {
+        margin-left: 30px; color: #6f7275;
+    }
+
+
+
+</style>
+
+<div class="panel">
+
+    <div class="register-page-wrap">
+
+        <h3>회원가입</h3>
+
+        <div class="register-page-form-wrap">
+
+            <div class="register-page-panel">
+                <h4>이메일 가입하기</h4>
+            </div>
+
+            <form ng-show="!vm.success" class="form-signup form-user panel-body" name="form" role="form" novalidate ng-submit="vm.register()">
+
+                <fieldset>
+
+                    <input type="text" name="username" class="form-control input-sm" required="" placeholder="아이디" id="login" ng-model="vm.registerAccount.login">
+
+                    <input type="password" name="password" class="form-control input-sm" placeholder="비밀번호" required="" value="" id="password" ng-model="vm.registerAccount.password">
+
+                    <input type="email" class="form-control input-sm" placeholder="이메일" id="email" name="email" ng-model="vm.registerAccount.email" ng-minlength=5 ng-maxlength=100 required>
+
+                    <!--<input type="text" class="form-control input-sm" placeholder="이름" id="login" name="login" ng-model="vm.registerAccount.login">-->
+
+                    <input type="text" name="avatar.nickname" class="form-control input-sm" placeholder="닉네임" ng-model="vm.registerAccount.nickName">
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="person.dmAllowed" value="true" checked="checked"> 이메일 수신 동의
+                        </label>
+                    </div>
+                </fieldset>
+
+                <button class="btn btn-primary btn-block" type="submit">아래 약관을 동의하며 회원 가입</button>
+
+                <div class="signup-block">
+                    <a href="/user/agreement" data-toggle="modal" data-target="#userAgreement">회원가입약관</a> <span class="inline-saperator">/</span> <a href="/user/privacy" data-toggle="modal" data-target="#userPrivacy">개인정보취급방침</a>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+</div>
